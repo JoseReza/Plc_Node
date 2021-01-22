@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>PLC NODE</title>
+  </head>
+  <body>
+    <button type="button" class="btn btn-primary" id = "btn_save"> Guardar </button>
+    <button type="button" class="btn btn-primary" id = "btn_compile"> Compilar </button>
+    <button type="button" class="btn btn-primary" id = "btn_upload"> Subir </button>
+    <button type="button" class="btn btn-primary" id = "btn_search_ports"> Buscar puertos </button>
+    <label>COM:</label>
+    <input type="number" id="input_port" value="0"></input>
+
+    <textarea rows="15" cols="100" id="text_area"></textarea> 
+    <meter id= "progress_bar" value="" min="0" max="40"></meter><br>
+    <h5 id = "debug_area"></h5>
+  </body>
+</html>
+    
+    <link rel="stylesheet" href="bootstrap.css"/>
+    <!--Esto es un comentario-->
+    <script src="renderer.js"></script>
